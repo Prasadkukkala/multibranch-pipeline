@@ -4,18 +4,18 @@ pipeline {
     stages {
         stage('Hotfix branch') {
             steps {
-                sh echo 'the master branch'
+                sh 'echo "the master branch"'
             }
         }
         stage('sprint1') {
             steps {
-                sh echo 'the sprint1'
+                sh 'echo "the sprint1"'
             }  
         } 
         stage('Hotfix branch') {
              steps {
-                 sh echo 'deploying World'
+                 sh 'echo "deploying World"'
             }  
         } 
     }
-}
+}i
