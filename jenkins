@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Development branch') {
+        stage('Master branch') {
             steps {
-                sh echo 'the master branch'
+                sh 'echo "the master branch"'
             }
         }
         stage('sprint1') {
             steps {
-                sh echo 'the sprint1'
+                sh 'echo "the sprint1"'
             }  
         } 
-        stage('Development branch') {
+        stage('Master branch') {
              steps {
-                 sh echo 'deploying World'
+                 sh 'echo "deploying World"'
             }  
         } 
     }
