@@ -12,7 +12,7 @@ pipeline {
                 sh 'echo "the sprint1"'
             }  
         } 
-        stage('Main branch') {
+        stage('deployment') {
              steps {
                  sh 'echo "deploying World"'
             }  
