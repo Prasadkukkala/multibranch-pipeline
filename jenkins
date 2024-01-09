@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Master branch') {
+            steps {
+                sh echo 'the master branch'
+            }
+        }
+        stage('sprint1') {
+            steps {
+                sh echo 'the sprint1'
+            }  
+        } 
+        stage('Master branch') {
+             steps {
+                 sh echo 'deploying World'
+            }  
+        } 
+    }
+}
