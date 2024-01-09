@@ -12,7 +12,7 @@ pipeline {
                 sh 'echo "the sprint1"'
             }  
         } 
-        stage('Hotfix branch') {
+        stage('deployment') {
              steps {
                  sh 'echo "deploying World"'
             }  
