@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Main branch') {
+        stage('Development branch') {
             steps {
                 sh echo 'the master branch'
             }
@@ -12,7 +12,7 @@ pipeline {
                 sh echo 'the sprint1'
             }  
         } 
-        stage('Main branch') {
+        stage('Development branch') {
              steps {
                  sh echo 'deploying World'
             }  
